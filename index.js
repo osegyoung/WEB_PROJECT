@@ -1,4 +1,28 @@
 //index.js
+let members = [{
+    id: 'user01',
+    pw: '1111',
+    name: '홍길동'
+  },
+  {
+    id: 'user02',
+    pw: '2222',
+    name: '김민서'
+  },
+  {
+    id: 'user03',
+    pw: '3333',
+    name: '최유진'
+  }
+]
+
+let member_json = JSON.stringify(members);
+// 회원정보.
+localStorage.setItem('members', member_json);
+
+
+
+// 연습
 let name = 'Hongkildong';
 localStorage.setItem('name', 'Hongkildong'); // 문자열로만 값을 담아야함.
 console.log(localStorage.getItem('name'));
@@ -34,4 +58,4 @@ obj = {
 }
 json = JSON.stringify(obj); // 객체 -> 문자열.
 console.log(json);
-localStorage.setItem('myfriend',json);
+localStorage.setItem('myfriend', json);
