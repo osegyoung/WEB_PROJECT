@@ -1,8 +1,8 @@
 // member.js
 //localStrorage에서 members 정보.
 let members = [];
-members = JSON.parse(localStorage.getItem('members'));
-console.log('members');
+members = JSON.parse(localStorage.getItem('memberData'));
+console.log(members);
 // members의 값을 활용해서 tbody 영역의 html작성.
 members.forEach(function (elem) {
 

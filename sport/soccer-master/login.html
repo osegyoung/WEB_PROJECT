@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인 화면</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <form name="loginFrm" action="">
-    사용자ID: <input type="text" name="user_id"><br>
-    비밀번호: <input type="password" name="user_pw"><br>
-    <input type="submit" value="로그인">
-  </form>
-  <script>
-    // loginFrm에 submit등록.
-    document.forms.loginFrm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      let id = document.querySelector('input[name= "user_id"]').value;
-      let pw = document.querySelector('input[name= "user_pw"]').value;
-      // members의 저장값.
-      let members = JSON.parse(localStorage.getItem('members'));
-      console.log(members);
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Come On!!</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" required placeholder="아이디">
+                </div>
+                <div class="input-group">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" required placeholder="비밀번호"
+                        onkeyup="checkCapsLock(event)">
+                    <div class="pwd-toggle login_input"></div>
+                    <div id="password"></div>
+                </div>
 
-      if (members) {
-        for (let i = 0; i < members.length; i++) {
-          if (members[i].id == id && members[i].pw == pw) {
-            alert('환영합니다.');
-            return;
-          }
-        }
-      }
-      alert('아이디와 비밀번호를 확인하세요');
-    });
-  </script>
+                <!-- 로그인 유지 체크박스 -->
+                <div class="control-container">
+                    <input type="checkbox" id="a">
+
+                    <label for="b" class="label-box">
+                        <span class="check-icon" aria-hidden="true"></span>
+                        로그인 유지
+                    </label>
+
+                </div>
+
+                <!-- 이메일 저장 체크박스 -->
+                <div class="control-container">
+                    <input type="checkbox" id="b">
+
+                    <label for="b" class="label-box">
+                        <span class="check-icon" aria-hidden="true"></span>
+                        로그인 유지
+                    </label>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">비밀번호를 잊으셨나요?</a>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">GO</button>
+                </div>
+            </form>
+            <div class="signup-link">
+                <p>회원이 아니신가요? <a href="memberD.html">회원가입</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

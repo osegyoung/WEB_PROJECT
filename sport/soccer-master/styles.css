@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2b2929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  top: 100px;
+  right: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  padding: 40px;
+
+}
+
+.login-box {
+  background-color: #444242;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #353535;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #202022;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.control-container {
+  display: flex;
+  position: relative;
+}
+
+.control-container+.control-container {
+  margin-top: 0.7em;
+}
+
+.screen-reader {
+  /* 스크린 리더를 고려해서 체크박스를 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: inset(50%);
+}
+
+.label-box {
+  position: relative;
+}
+
+.check-icon {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid gray;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.check-icon::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 30%;
+  height: 55%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-70%) rotateZ(40deg);
+  border-right: 1.7px solid gray;
+  border-bottom: 1.7px solid gray;
+}
+
+label {
+  padding-left: 2.2em;
+  position: relative;
+  cursor: pointer;
+}
+/* 체크박스가 선택되었을 때의 스타일 */
+[type="checkbox"]:checked + .label-box .check-icon {
+  border-color: yellowgreen;
+  background-color: yellowgreen;
+}
+
+/* 체크박스 아이콘에 대한 스타일 */
+.check-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* 체크박스 아이콘의 before 가상 요소 */
+.check-icon::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* 체크박스가 선택되었을 때 체크 아이콘 스타일 */
+[type="checkbox"]:checked + .label-box .check-icon::before {
+  background-color: yellowgreen;
+}
+

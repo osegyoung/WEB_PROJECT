@@ -47,12 +47,16 @@
 
     <header class="site-navbar py-4" role="banner">
 
+
       <div class="container">
         <div class="d-flex align-items-center">
-          <div class="site-logo">
-            <a href="index.html">
+          <div class="site-logo">         
               <img src="images/logo.png" alt="Logo">
             </a>
+            <script src="init1.js"></script>
+            <script>
+              localStorage.setItem('memberD', JSON.stringify(memberData));
+            </script>
           </div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -62,6 +66,7 @@
                 <li><a href="players.html" class="nav-link">Players</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">login</a></li>
               </ul>
             </nav>
 
@@ -73,7 +78,7 @@
 
     </header>
 
-    <div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
+    <div class="hero overlay" style="background-image: url('images/챔스.jpg');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 ml-auto">
@@ -91,35 +96,33 @@
 
     
     
-    <div class="container">
+    <div class="container"> 
       
 
       <div class="row">
         <div class="col-lg-12">
           
           <div class="d-flex team-vs">
-            <span class="score">4-1</span>
+            <span class="score">3-2</span>
             <div class="team-1 w-50">
+              <h3>latest-match</h3>
+              
               <div class="team-details w-100 text-center">
-                <img src="images/logo_1.png" alt="Image" class="img-fluid">
-                <h3>LA LEGA <span>(win)</span></h3>
+                <img src="images/레알마드리드1.png" alt="Image" class="img-fluid">
+                <h3>Real Madrid <span>(win)</span></h3>
                 <ul class="list-unstyled">
-                  <li>Anja Landry (7)</li>
-                  <li>Eadie Salinas (12)</li>
-                  <li>Ashton Allen (10)</li>
-                  <li>Baxter Metcalfe (5)</li>
+                  <li>Mbappe 60'</li>
+                  <li>Brahim Diaz 86' </li>
+                  <li>Bellingham 90'+2</li>                  
                 </ul>
               </div>
             </div>
             <div class="team-2 w-50">
               <div class="team-details w-100 text-center">
-                <img src="images/맨시티1.png" alt="Image" class="img-fluid">
-                <h3>JUVENDU <span>(loss)</span></h3>
+                <img src="images/맨시.png" alt="Image" class="img-fluid" style="height: 67.53px;">
+                <h3>Man City <span>(loss)</span></h3>
                 <ul class="list-unstyled">
-                  <li>Macauly Green (3)</li>
-                  <li>Arham Stark (8)</li>
-                  <li>Stephan Murillo (9)</li>
-                  <li>Ned Ritter (5)</li>
+                  <li>Erling Haaland 19', 80'(Pen)</li>                  
                 </ul>
               </div>
             </div>
@@ -133,25 +136,25 @@
       <div class="container">
         <div class="row">
           <div class="col-12 title-section">
-            <h2 class="heading">Latest News</h2>
+            <h2 class="heading">News</h2>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-md-4">
             <div class="post-entry">
               <a href="#">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                <img src="images/이강인1.jpg" alt="Image" class="img-fluid" style="height: 478.55px;">
               </a>
               <div class="caption">
                 <div class="caption-inner">
-                  <h3 class="mb-3">Romolu to stay at Real Nadrid?</h3>
+                  <h3 class="mb-3">이강인, 15분 교체 출전 ->'뎀벨레 멀티골' PSG, 브레스트에 3-0'완승' </h3>
                   <div class="author d-flex align-items-center">
                     <div class="img mb-2 mr-3">
                       <img src="images/person_1.jpg" alt="">
                     </div>
                     <div class="text">
-                      <h4>Mellissa Allison</h4>
-                      <span>May 19, 2020 &bullet; Sports</span>
+                      <h4>노찬혁 기자</h4>
+                      <span>02 12, 2025 &bullet; 마이데일리</span>
                     </div>
                   </div>
                 </div>
@@ -160,44 +163,44 @@
           </div>
           <div class="col-md-4">
             <div class="post-entry">
-              <a href="#">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="caption">
-                <div class="caption-inner">
-                  <h3 class="mb-3">Kai Nets Double To Secure Comfortable Away Win</h3>
-                  <div class="author d-flex align-items-center">
-                    <div class="img mb-2 mr-3">
-                      <img src="images/person_1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                      <h4>Mellissa Allison</h4>
-                      <span>May 19, 2020 &bullet; Sports</span>
+              <a href="https://www.edaily.co.kr/news/read?newsId=01115206642069864&mediaCodeNo=258">
+                <img src="images/벨링엄1.jpg" alt="Image" class="img-fluid" style="height: 478px;">
+                <div class="caption">
+                  <div class="caption-inner">
+                    <h3 class="mb-3">챔스리그 '미리보는 결승전'... 레알마드리드 맨체스터 시티 잡고 먼저 웃었다</h3>
+                    <div class="author d-flex align-items-center">
+                      <div class="img mb-2 mr-3">
+                        <img src="images/person_1.jpg" alt="">
+                      </div>
+                      <div class="text">
+                        <h4>김영준 기자</h4>
+                        <span>02 12, 2025 &bullet; 조선일보</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div> 
-            </div>
+              </a>
+            </div> 
           </div>
           <div class="col-md-4">
             <div class="post-entry">
-              <a href="#">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="caption">
-                <div class="caption-inner">
-                  <h3 class="mb-3">Dogba set for Juvendu return?</h3>
+              <a href="https://www.xportsnews.com/article/1960583">
+                <img src="images/손흥민.jpg" alt="Image" class="img-fluid" style="height: 478.55px;">
+                <div class="caption">
+                  <div class="caption-inner">
+                  <h3 class="mb-3">손흥민 방출? 무기력한 토트넘 떠날 찬스!..</h3>
                   <div class="author d-flex align-items-center">
                     <div class="img mb-2 mr-3">
                       <img src="images/person_1.jpg" alt="">
                     </div>
                     <div class="text">
-                      <h4>Mellissa Allison</h4>
-                      <span>May 19, 2020 &bullet; Sports</span>
+                      <h4>권동환 기자</h4>
+                      <span>02 12, 2025 &bullet; 엑스포츠뉴스</span>
                     </div>
                   </div>
                 </div>
               </div> 
+            </a>
             </div>
           </div>
         </div>
@@ -225,18 +228,18 @@
                     </div>
                     <div class="team-2 text-center">
                       <img src="images/logo_2.png" alt="Image">
-                      <h3>Soccer</h3>
+                      <h3>Liverpool</h3>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="text-center widget-vs-contents mb-4">
-                <h4>World Cup League</h4>
+                <h4>Premier League</h4>
                 <p class="mb-5">
-                  <span class="d-block">December 20th, 2020</span>
-                  <span class="d-block">9:30 AM GMT+0</span>
-                  <strong class="text-primary">New Euro Arena</strong>
+                  <span class="d-block">Frburary 13, 2025</span>
+                  <span class="d-block">4:30 AM GMT+0</span>
+                  <strong class="text-primary">Goodison Park, Liverpool</strong>
                 </p>
 
                 <div id="date-countdown2" class="pb-1"></div>
@@ -249,78 +252,195 @@
               <table class="table custom-table">
                 <thead>
                   <tr>
-                    <th>P</th>
+                    <th>순위</th>
                     <th>Team</th>
+                    <th>PTS</th>
+                    <th>P</th>
                     <th>W</th>
                     <th>D</th>
                     <th>L</th>
-                    <th>PTS</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td><strong class="text-white">Football League</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">리버풀</strong></td>
+                    <td>56</td>
+                    <td>23</td>
+                    <td>17</td>
+                    <td>5</td>
+                    <td>1</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td><strong class="text-white">Soccer</strong></td>
-                    <td>22</td>
-                    <td>3</td>
+                    <td><strong class="text-white">아스날</strong></td>
+                    <td>50</td>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>8</td>
                     <td>2</td>
-                    <td>140</td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td><strong class="text-white">Juvendo</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">노팅엄</strong></td>
+                    <td>47</td>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>5</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td><strong class="text-white">French Football League</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">첼시</strong></td>
+                    <td>43</td>
+                    <td>24</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>5</td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td><strong class="text-white">Legia Abante</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">맨시티</strong></td>
+                    <td>41</td>
+                    <td>24</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>7</td>
                   </tr>
                   <tr>
                     <td>6</td>
-                    <td><strong class="text-white">Gliwice League</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">뉴캐슬</strong></td>
+                    <td>41</td>
+                    <td>24</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>7</td>
                   </tr>
                   <tr>
                     <td>7</td>
-                    <td><strong class="text-white">Cornika</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">본머스</strong></td>
+                    <td>40</td>
+                    <td>24</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>6</td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td><strong class="text-white">Gravity Smash</strong></td>
-                    <td>22</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>140</td>
+                    <td><strong class="text-white">애스턴 빌라</strong></td>
+                    <td>37</td>
+                    <td>24</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td><strong class="text-white">풀럼</strong></td>
+                    <td>36</td>
+                    <td>24</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td><strong class="text-white">브라이턴</strong></td>
+                    <td>34</td>
+                    <td>24</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <tr>
+                      <td>11</td>
+                      <td><strong class="text-white">브랜트퍼드</strong></td>
+                      <td>31</td>
+                      <td>24</td>
+                      <td>9</td>
+                      <td>4</td>
+                      <td>11</td>
+                      <tr>
+                        <td>12</td>
+                        <td><strong class="text-white">팰리스</strong></td>
+                        <td>30</td>
+                        <td>24</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <tr>
+                          <td>13</td>
+                          <td><strong class="text-white">맨유</strong></td>
+                          <td>29</td>
+                          <td>24</td>
+                          <td>8</td>
+                          <td>5</td>
+                          <td>11</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td><strong class="text-white">토트넘</strong></td>
+                          <td>27</td>
+                          <td>24</td>
+                          <td>8</td>
+                          <td>3</td>
+                          <td>13</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td><strong class="text-white">웨스트햄</strong></td>
+                          <td>27</td>
+                          <td>24</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>6</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td><strong class="text-white">에버턴</strong></td>
+                          <td>26</td>
+                          <td>23</td>
+                          <td>6</td>
+                          <td>8</td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td><strong class="text-white">울버햄튼</strong></td>
+                          <td>19</td>
+                          <td>24</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td><strong class="text-white">레스터 시티</strong></td>
+                          <td>17</td>
+                          <td>24</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td><strong class="text-white">입스위치</strong></td>
+                          <td>16</td>
+                          <td>24</td>
+                          <td>3</td>
+                          <td>7</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td><strong class="text-white">사우샘프턴</strong></td>
+                          <td>37</td>
+                          <td>24</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>7</td>
+                        </tr>
+                      </tr>
+                    </tr>
                   </tr>
                 </tbody>
               </table>
