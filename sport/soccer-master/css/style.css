@@ -1605,3 +1605,47 @@ h5,
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+/* k리그 로고 */
+.kleague-logo-container {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트 세로 정렬 */
+}
+
+.kleague-logo {
+  height: 20px; /* 이미지 크기 조정 */
+  margin-right: 8px; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.site-menu li a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-menu li a:hover {
+  color: #61b7e7;
+}
+/* premierleague */
+.premierleague-container {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트 세로 정렬 */
+}
+
+.premierleage-logo {
+  height: 20px; /* 이미지 크기 조정 */
+  margin-right: 8px; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.site-menu li a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-menu li a:hover {
+  color: #61b7e7;
+}
