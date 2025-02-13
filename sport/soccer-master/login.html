@@ -9,58 +9,25 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <h1>Come On!!</h1>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="username"></label>
-                    <input type="text" id="username" name="username" required placeholder="아이디">
-                </div>
-                <div class="input-group">
-                    <label for="password"></label>
-                    <input type="password" id="password" name="password" required placeholder="비밀번호"
-                        onkeyup="checkCapsLock(event)">
-                    <div class="pwd-toggle login_input"></div>
-                    <div id="password"></div>
-                </div>
-
-                <!-- 로그인 유지 체크박스 -->
-                <div class="control-container">
-                    <input type="checkbox" id="a">
-
-                    <label for="b" class="label-box">
-                        <span class="check-icon" aria-hidden="true"></span>
-                        로그인 유지
-                    </label>
-
-                </div>
-
-                <!-- 이메일 저장 체크박스 -->
-                <div class="control-container">
-                    <input type="checkbox" id="b">
-
-                    <label for="b" class="label-box">
-                        <span class="check-icon" aria-hidden="true"></span>
-                        로그인 유지
-                    </label>
-                </div>
-
-                <div class="forgot-password">
-                    <a href="#">비밀번호를 잊으셨나요?</a>
-                </div>
-
-                <div>
-                    <button type="submit" class="btn">GO</button>
-                </div>
-            </form>
-            <div class="signup-link">
-                <p>회원이 아니신가요? <a href="memberD.html">회원가입</a></p>
+    <main>
+        <h1>로그인</h1>
+        <form id="loginForm">
+            <fieldset>
+                <input type="text" id="username" placeholder="아이디" required />
+            </fieldset>
+            <fieldset>
+                <input type="password" id="password" name="password" placeholder="비밀번호" required />
+                <!--비밀번호 시크릿 -->
+                <div class="pwd-toggle login_input" id="pwdToggle"></div>
+            </fieldset>
+            <button type="submit" class="btn" id="btn">로그인</button>
+        </form>
+        <div class="signup-link">
+            <div class="forgot-password" style="text-align: right;"><a href="회원가입.html">회원가입</a>
             </div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
